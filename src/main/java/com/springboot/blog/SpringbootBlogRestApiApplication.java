@@ -12,6 +12,9 @@ public class SpringbootBlogRestApiApplication {
 		return new ModelMapper();
 	}
 
+	@Bean
+	public String returnMessage(){return "string from bean";};
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootBlogRestApiApplication.class, args);
 	}
